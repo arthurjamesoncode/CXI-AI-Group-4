@@ -1,0 +1,18 @@
+A local bakery — "Harwood & Sons"
+A family-run bakery in the Peak District wants a simple website to replace their outdated Facebook page as their main online presence. They do sourdough, pastries, and seasonal celebration cakes, and take custom cake orders by request.
+Goals
+
+Show their menu and weekly specials
+Let customers find opening hours, location, and contact details
+Accept custom cake enquiries via a contact form
+
+Pages
+
+Home — hero image, short brand story, link to menu
+Menu — bread, pastries, and cakes with prices
+Order a cake — simple enquiry form (name, date needed, message)
+Find us — map embed, opening hours, phone number
+
+Tone
+Warm, unpretentious, artisan. Nothing corporate. Feels like it was made with the same care as the bread.
+Constraints

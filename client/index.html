@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Submission Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="header-label">Component Selection</div>
+        <h1>Upload your Design System</h1>
+        <p>
+          This page is meant to generate a new webpage based on a brief (or
+          briefs) and a given design system which you can upload using the boxes
+          below.
+        </p>
+        <p>
+          Each section collects a specific part of your design system. Your
+          system may or may not fit the categories included. Add, rename, or
+          remove sections to match your needs.
+        </p>
+        <p>
+          <b>Once finished, hit submit and wait.</b> Your chosen AI agent will
+          use the uploaded documents to select which elements of your system it
+          thinks should be used.
+        </p>
+        <p>
+          Under each selection, you can see a justification of why it chose
+          those specific elements. At the bottom of a page is a html file, which
+          contains a mock up page made of the elements it has chosen.
+        </p>
+        <p>
+          <b
+            >Disclaimer: This page sends requests to various cloud AI services,
+            you should not upload any sensitive information as part of your
+            design system.</b
+          >
+        </p>
+      </div>
+
+      <div id="slots-grid"></div>
+
+      <div class="section-divider">add a section</div>
+
+      <div class="custom-add-row">
+        <input
+          class="custom-label-input"
+          id="custom-label-input"
+          type="text"
+          placeholder="Custom section name…"
+          maxlength="40"
+        />
+        <button class="custom-add-btn" id="custom-add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <!-- Submit bar -->
+    <div class="submit-bar">
+      <div class="submit-summary" id="submit-summary">No files added yet.</div>
+      <button class="submit-btn" id="submit-btn">Submit form</button>
+    </div>
+
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
