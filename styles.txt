@@ -1,0 +1,99 @@
+Design System: Styles
+
+Style Name: Warm Artisan Local Bakery
+
+Overall brand feeling:
+Warm, handmade, welcoming, unpretentious, and local.
+The website should feel like it was made with the same care as the bakery products.
+It should feel human and trustworthy rather than corporate or overly polished.
+
+Tone of voice:
+Friendly, straightforward, and calm.
+Use natural language that sounds like a real local business.
+Keep copy warm and approachable.
+Avoid formal business language, exaggerated marketing language, or generic startup phrasing.
+
+Visual direction:
+Use a simple, classic layout with soft warmth.
+The interface should feel crafted, clean, and practical.
+Prioritise clarity and trust over visual novelty.
+The design should look modern enough to feel updated, but not sleek in a cold or tech-branded way.
+
+Colour guidance:
+Preferred backgrounds: cream, off-white, warm beige, soft stone.
+Preferred accents: baked brown, muted terracotta, warm amber, dusty olive if needed.
+Preferred text colour: dark brown, charcoal, or espresso-like tones.
+Avoid: bright corporate blue, neon colours, highly saturated gradients, harsh pure black and pure white combinations.
+
+Typography guidance:
+Headings should feel characterful and slightly artisanal, ideally with a serif or soft traditional style.
+Body text should be clean, readable, and understated, ideally sans-serif.
+Typography should support warmth and readability rather than feeling futuristic or luxury-fashion.
+Avoid ultra-modern geometric branding, aggressive bold display fonts, or overly decorative script fonts.
+
+Spacing and layout:
+Use generous but sensible spacing.
+Layouts should be easy to scan and not overcrowded.
+Content should breathe, but the site should still feel grounded and practical.
+Avoid overly dense layouts or highly experimental compositions.
+
+Buttons and interactive elements:
+Buttons should feel simple, tactile, and trustworthy.
+Use moderate border radius and clear labels.
+Solid fills or lightly tinted backgrounds are preferred.
+Avoid glossy effects, futuristic outlines, or overly sharp UI treatments.
+
+Cards and surfaces:
+Use subtle borders, soft background differences, or light shadows where needed.
+Cards should feel paper-like and calm rather than floating or glassy.
+Avoid glassmorphism, overly deep shadows, or high-contrast enterprise dashboard aesthetics.
+
+Imagery:
+Photography should focus on bread, pastries, cakes, baking process, ingredients, shop atmosphere, and local authenticity.
+Images should feel natural and believable.
+Prefer warm lighting and real-life texture.
+Avoid sterile cutout product imagery, generic office-style stock photos, or luxury editorial fashion styling.
+
+Content behaviour:
+Home page should quickly answer who the business is, what they sell, and what users should do next.
+Menu content should be highly scannable.
+Cake enquiries should feel low-friction and personal.
+Find-us information should foreground practical details such as hours, address, and phone number.
+
+Microcopy guidance:
+Prefer clear everyday wording such as:
+“See this week’s bakes”
+“Browse the menu”
+“Order a celebration cake”
+“Find us in the Peak District”
+“Get in touch”
+Avoid abstract calls-to-action, vague wording, or polished corporate language such as “Explore solutions” or “Connect with our team”.
+
+Accessibility and usability:
+Text must remain easy to read.
+Contrast should be sufficient without becoming visually harsh.
+Navigation and form interactions should be obvious.
+Use simple structures that would be easy for real users to understand quickly.
+
+Human-centred design principle:
+The design should support real customer tasks first:
+seeing the menu,
+finding the bakery,
+and sending a cake enquiry.
+Aesthetic choices should never make those tasks harder.
+
+Negative rules:
+Do not use enterprise SaaS styling.
+Do not make the site feel like a tech startup.
+Do not overuse animation or visual effects.
+Do not create a luxury-brand aesthetic that feels too expensive or exclusive.
+Do not introduce unnecessary complexity, dashboards, multi-step flows, or excessive UI chrome.
+Do not let style overpower clarity.
+
+Selection preference guidance:
+When choosing between multiple valid options, prefer the one that feels:
+more local,
+more handcrafted,
+more readable,
+more welcoming,
+and less corporate.

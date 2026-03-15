@@ -1,0 +1,71 @@
+Design System Containers
+
+Container: Hero Section
+Purpose: Introduce the business immediately and create a strong first impression near the top of a page.
+Best for: Home pages and landing pages where users need to understand the business quickly.
+Usually contains: section heading, supporting paragraph, primary call-to-action, optional image.
+Use when: the page needs a welcoming introduction and a clear next step.
+Avoid when: the page is purely informational and should start directly with detailed content.
+
+Container: Brand Story Section
+Purpose: Communicate the business background, values, craft, or personality in a short and human way.
+Best for: Local businesses, artisan brands, independent shops, and service businesses with a personal identity.
+Usually contains: section heading, short paragraph, optional supporting image, optional text link.
+Use when: trust, warmth, or authenticity are important to the brand.
+Avoid when: there is no meaningful story or when the page must stay highly transactional.
+
+Container: Featured Items Section
+Purpose: Highlight a small number of notable products, specials, or seasonal offerings.
+Best for: Home pages, campaign pages, and small business sites wanting to showcase bestsellers or weekly specials.
+Usually contains: section heading, short intro text, cards or featured item rows, optional badges.
+Use when: a business wants to bring attention to a limited set of important items.
+Avoid when: the page already includes a full menu or catalogue immediately below and repetition would be unnecessary.
+
+Container: Menu Listing Section
+Purpose: Present grouped products or food items in a clear, scannable structure.
+Best for: Menu pages, price lists, service lists, and simple catalogues.
+Usually contains: category groups, item name, short description, price, optional tag or badge.
+Use when: users need to browse multiple items efficiently.
+Avoid when: only one or two products are being promoted and a simpler featured layout would be enough.
+
+Container: Enquiry Form Section
+Purpose: Collect user information and a free-text enquiry for a service request.
+Best for: Contact pages, booking requests, order enquiries, custom service requests.
+Usually contains: section heading, helper text, form fields, textarea, submit button.
+Use when: the task is an enquiry rather than a full e-commerce checkout.
+Avoid when: users need to complete payment or a complex transactional process.
+
+Container: Contact Details Section
+Purpose: Present practical contact information in a compact and easy-to-scan format.
+Best for: Contact pages, find-us pages, footers, and local business websites.
+Usually contains: phone number, email or enquiry route, address, optional icons.
+Use when: users need fast access to direct communication details.
+Avoid when: the same exact information is already overloaded in multiple nearby sections.
+
+Container: Location & Opening Hours Section
+Purpose: Help users visit the business by showing where it is and when it is open.
+Best for: Restaurants, cafés, bakeries, retail shops, studios, and any location-based business.
+Usually contains: address, opening hours, phone number, map embed or map placeholder.
+Use when: in-person visits are important.
+Avoid when: the business is fully online or location is irrelevant.
+
+Container: CTA Banner Section
+Purpose: Prompt users toward one clear next action after they have read some content.
+Best for: Home pages, long pages, and transitional moments between content sections.
+Usually contains: short heading or sentence, supporting line, one primary action.
+Use when: users may benefit from a simple prompt such as viewing a menu or placing an enquiry.
+Avoid when: there are already too many calls-to-action on the page.
+
+Container: Image Gallery Section
+Purpose: Use a small collection of images to reinforce atmosphere, products, or craft quality.
+Best for: Food businesses, artisans, local shops, visual portfolios.
+Usually contains: small image grid or image row, optional caption or heading.
+Use when: photography can strengthen trust and brand feeling.
+Avoid when: suitable imagery is unavailable or the page should remain minimal and text-led.
+
+Container: Footer Section
+Purpose: Provide persistent utility information at the bottom of a page.
+Best for: All pages.
+Usually contains: business name, contact details, navigation links, social links if relevant, copyright or small print.
+Use when: the page needs a consistent ending and repeated access to core information.
+Avoid when: never omit entirely from a complete website structure.

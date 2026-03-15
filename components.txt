@@ -1,0 +1,139 @@
+Design System Components
+
+Component: Section Heading
+Purpose: Label a content section clearly and establish hierarchy.
+Best used in: Hero Section, Brand Story Section, Featured Items Section, Menu Listing Section, Enquiry Form Section, Location & Opening Hours Section, CTA Banner Section.
+Content guidance: Keep headings short, memorable, and easy to scan. Prefer plain English over marketing language.
+Avoid: Long sentence-style headings or abstract wording.
+
+Component: Supporting Paragraph
+Purpose: Add short explanatory copy below a heading or title.
+Best used in: Hero Section, Brand Story Section, Featured Items Section, Enquiry Form Section, CTA Banner Section.
+Content guidance: Use warm, human, concise language. Usually one to three sentences maximum.
+Avoid: Corporate jargon, overly polished sales language, or dense copy blocks.
+
+Component: Eyebrow Label
+Purpose: Add a small contextual label above a heading to orient the user.
+Best used in: Hero Section, Featured Items Section, CTA Banner Section.
+Content guidance: Examples include “This week”, “Freshly baked”, or “Made to order”.
+Avoid: Overusing on every section.
+
+Component: Primary Button
+Purpose: Drive the most important action in a section.
+Best used in: Hero Section, CTA Banner Section, Enquiry Form Section.
+Content guidance: Use clear action-led labels such as “View Menu”, “Order a Cake”, or “Send Enquiry”.
+Avoid: Using multiple primary buttons in a small section unless there is a strong reason.
+
+Component: Secondary Link
+Purpose: Offer a lower-emphasis navigation or supporting action.
+Best used in: Hero Section, Brand Story Section, Footer Section.
+Content guidance: Keep labels short and direct.
+Avoid: Competing visually with the primary action.
+
+Component: Image Block
+Purpose: Add atmosphere, product visibility, or brand warmth through photography.
+Best used in: Hero Section, Brand Story Section, Featured Items Section, Image Gallery Section.
+Content guidance: Prefer authentic bakery, food, or local-environment imagery.
+Avoid: Generic corporate stock photography or overly polished lifestyle imagery.
+
+Component: Section Image Pair
+Purpose: Combine text and image in a balanced two-column layout.
+Best used in: Brand Story Section, Featured Items Section.
+Content guidance: Use when a section benefits from both explanation and visual support.
+Avoid: Overusing repeatedly on every section.
+
+Component: Product Card
+Purpose: Present an individual menu item or featured product clearly.
+Best used in: Featured Items Section, Menu Listing Section.
+Content guidance: Include item name, short description if useful, and price where relevant.
+Avoid: Long descriptions that reduce scanability.
+
+Component: Product Row
+Purpose: Display menu items in a more compact line-based format.
+Best used in: Menu Listing Section.
+Content guidance: Suitable for simple menus with item name, short descriptor, and price.
+Avoid: Over-styling or making the layout too dense.
+
+Component: Category Group
+Purpose: Organise related menu items under a shared heading.
+Best used in: Menu Listing Section.
+Content guidance: Good examples include Bread, Pastries, Cakes, Specials.
+Avoid: Too many categories with very few items each.
+
+Component: Price Text
+Purpose: Show item pricing clearly and consistently.
+Best used in: Product Card, Product Row, Menu Listing Section.
+Content guidance: Place close to the item name and keep formatting consistent.
+Avoid: Hiding prices or making them visually secondary if price matters to users.
+
+Component: Badge / Tag
+Purpose: Highlight a useful status or special note on an item.
+Best used in: Featured Items Section, Menu Listing Section.
+Content guidance: Good examples include “Seasonal”, “Popular”, “This week”, or “Made to order”.
+Avoid: Decorative labels with no real meaning.
+
+Component: Divider
+Purpose: Separate groups of content without heavy visual interruption.
+Best used in: Menu Listing Section, long-form informational pages, Footer Section.
+Content guidance: Keep visual treatment subtle.
+Avoid: Replacing proper spacing or hierarchy with too many lines.
+
+Component: Form Intro Text
+Purpose: Explain the purpose of a form and set expectations before input begins.
+Best used in: Enquiry Form Section.
+Content guidance: Make the process feel simple and low-pressure.
+Avoid: Legalistic or overly formal instructions.
+
+Component: Form Field
+Purpose: Collect a single structured piece of information from the user.
+Best used in: Enquiry Form Section.
+Content guidance: Use explicit labels such as Name, Date Needed, Email, or Phone.
+Avoid: Ambiguous labels.
+
+Component: Textarea
+Purpose: Let users describe a custom request in their own words.
+Best used in: Enquiry Form Section.
+Content guidance: Encourage users to share details such as flavour, size, occasion, or decoration ideas.
+Avoid: Making it feel compulsory to write too much.
+
+Component: Submit Button
+Purpose: Send form content for review or enquiry.
+Best used in: Enquiry Form Section.
+Content guidance: Labels should be reassuring and direct, such as “Send Enquiry”.
+Avoid: Aggressive or overly sales-focused language.
+
+Component: Contact Detail Row
+Purpose: Display one practical contact item clearly.
+Best used in: Contact Details Section, Location & Opening Hours Section, Footer Section.
+Content guidance: Suitable for phone number, email, address, or enquiry contact.
+Avoid: Decorative clutter around essential details.
+
+Component: Opening Hours List
+Purpose: Present weekly opening times in a scannable structure.
+Best used in: Location & Opening Hours Section.
+Content guidance: Use clear day/time pairing and make exceptions easy to notice.
+Avoid: Dense paragraph formatting.
+
+Component: Map Embed Placeholder
+Purpose: Represent a location map within a page layout.
+Best used in: Location & Opening Hours Section.
+Content guidance: The map should support practical information rather than dominate the page.
+Avoid: Oversized map elements that overwhelm the section.
+
+Component: Social Link
+Purpose: Link to an external social channel where relevant.
+Best used in: Footer Section, Contact Details Section.
+Content guidance: Use only if the channel adds value and feels current.
+Avoid: Making social links more prominent than the primary business actions.
+
+Component: Small Print
+Purpose: Hold lightweight utility text such as copyright or policy references.
+Best used in: Footer Section.
+Content guidance: Keep concise and visually quiet.
+Avoid: Letting this compete with core navigation or contact details.
+
+Component: Navigation Link Group
+Purpose: Offer a compact set of page links for easier site movement.
+Best used in: Header areas, Footer Section.
+Content guidance: Keep link labels familiar and minimal, such as Home, Menu, Order a Cake, Find Us.
+Avoid: Large or complex navigation systems for a very small site.
