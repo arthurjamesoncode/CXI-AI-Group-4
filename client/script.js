@@ -1,27 +1,28 @@
+// import { puter } from '@heyputer/puter.js';
+
 // ── State ──────────────────────────────────────────────────────────────────
-const initial_prompt = 
-`In the following prompt you will be given a brief (or briefs) detailing a webpage that needs to be created, and various design system elements with which to create the webpage. 
+const initial_prompt = `In the following prompt you will be given a brief (or briefs) detailing a webpage that needs to be created, and various design system elements with which to create the webpage. 
 
 Your response should go section by section (excluding briefs), and detail which components you would select. If elements of the briefs or design system seem to conflict, or if you think the design system is unsuited to the brief please say so and explain why.
-Your response should conform EXACTLY to the format I will specify between the FORMAT START and FORMAT END lines and should contain ANY extra content. Where I say nth section, you should repeat this part of your response for each individual section. End every line with a new line character. If a line only says newline, it indicates an empty line: 
+Your response should conform EXACTLY to the format I will specify between the FORMAT START and FORMAT END lines and should not contain those lines themselves or ANY extra content. The lines made up of only ampersands indicate the end of each section and should be included exactly as shown, including the number of ampersands. Where I say nth section, you should repeat this part of your response for each individual section. End every line with a new line character.
 FORMAT START
 A title for the webpage derived from the given brief(s).
-A newline
+&&&&&
 The name of the nth section
-A newline
+&&&
 A list of elements chosen from the nth section
-A newline
+&&&
 A justification for why you chose these elements
-A newline
-(repeat the above for all sections, not including the main title)
+(repeat the above for all sections, including section breaks but not the main title)
 An overall description of the choices made.
-A newline
+&&&&&
 A html file containing a mock up of the created site.
 FORMAT END
 
 Everything below this is part of the brief(s) or design system.
 
-`
+`;
+
 let slots = [];
 let nextId = 1;
 
@@ -340,6 +341,107 @@ document
     if (e.key === 'Enter') document.getElementById('custom-add-btn').click();
   });
 
+// ── Output rendering ───────────────────────────────────────────────────────
+function renderOutput(responseText) {
+  const outputSection = document.getElementById('output-section');
+  const sectionsGrid = document.getElementById('output-sections-grid');
+  const summaryCard = document.getElementById('output-summary-card');
+  const summaryText = document.getElementById('output-summary-text');
+  const downloadRow = document.getElementById('download-row');
+
+  // Split on &&&&&  (major dividers)
+  const majorParts = responseText.split('&&&&&').map((s) => s.trim());
+
+  // Part 0 = title, Part 1 = section blocks, Part 2 = overall summary, Part 3 = HTML
+  const title = majorParts[0] || 'Generated Page';
+  const sectionBlock = majorParts[1] || '';
+  const overallSummary = majorParts[2] || '';
+  const htmlContent = majorParts[3] || '';
+
+  // Set title
+  document.getElementById('output-title').textContent = title;
+
+  // Parse individual sections (split on &&&)
+  sectionsGrid.innerHTML = '';
+  const sectionRaw = sectionBlock
+    .split('&&&')
+    .map((s) => s.trim())
+    .filter(Boolean);
+  // Groups of 3: [name, elements, justification]
+  for (let i = 0; i + 2 < sectionRaw.length; i += 3) {
+    const name = sectionRaw[i];
+    const elements = sectionRaw[i + 1];
+    const justification = sectionRaw[i + 2];
+
+    const card = document.createElement('div');
+    card.className = 'output-card open';
+
+    const elementsList = elements
+      .split('\n')
+      .map((e) => e.trim().replace(/^[-•*]\s*/, ''))
+      .filter(Boolean);
+
+    const tagsHTML = elementsList.length
+      ? elementsList
+          .map((e) => `<span class="element-tag">${e}</span>`)
+          .join('')
+      : `<span class="element-tag empty">None selected</span>`;
+
+    card.innerHTML = `
+      <div class="output-card-header">
+        <span class="output-card-title">${name}</span>
+        <span class="output-card-toggle">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </span>
+      </div>
+      <div class="output-card-body">
+        <div>
+          <div class="output-label">Selected Elements</div>
+          <div class="output-elements">${tagsHTML}</div>
+        </div>
+        <div>
+          <div class="output-label">Justification</div>
+          <p class="output-justification">${justification}</p>
+        </div>
+      </div>
+    `;
+
+    card.querySelector('.output-card-header').addEventListener('click', () => {
+      card.classList.toggle('open');
+    });
+
+    sectionsGrid.appendChild(card);
+  }
+
+  // Overall summary
+  if (overallSummary) {
+    summaryText.textContent = overallSummary;
+    summaryCard.style.display = 'block';
+  }
+
+  // HTML download
+  if (htmlContent) {
+    downloadRow.style.display = 'flex';
+    document.getElementById('download-btn').onclick = () => {
+      const blob = new Blob([htmlContent], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download =
+        (title
+          .toLowerCase()
+          .replace(/\s+/g, '-')
+          .replace(/[^a-z0-9-]/g, '') || 'mockup') + '.html';
+      a.click();
+      URL.revokeObjectURL(url);
+    };
+  }
+
+  // Show section and scroll to it
+  outputSection.classList.add('visible');
+  outputSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 // ── Submit ─────────────────────────────────────────────────────────────────
 document.getElementById('submit-btn').addEventListener('click', async () => {
   // Validate required slots
@@ -386,8 +488,27 @@ document.getElementById('submit-btn').addEventListener('click', async () => {
     promptString += '\n\n';
   }
 
-  console.log(promptString);
-  showToast(`✓ Form submitted`, 3500);
+  // Show loading state
+  const submitBtn = document.getElementById('submit-btn');
+  const originalText = submitBtn.textContent;
+  submitBtn.textContent = 'Generating…';
+  submitBtn.classList.add('loading');
+
+  try {
+    console.log('Request sent to puter');
+    const response = await puter.ai.chat(promptString);
+
+    console.log('Response Received', response.message);
+
+    renderOutput(response.message.content);
+    showToast('✓ Response ready!', 2000);
+  } catch (err) {
+    console.error('AI request failed:', err);
+    showToast('⚠ Something went wrong. Please try again.');
+  } finally {
+    submitBtn.textContent = originalText;
+    submitBtn.classList.remove('loading');
+  }
 });
 
 // ── Init with sensible defaults ────────────────────────────────────────────
